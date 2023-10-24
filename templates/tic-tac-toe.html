@@ -343,6 +343,7 @@
                         lineNumber: lineNumber
                     }),
                     success: function (data) {
+                        console.log("here");
                         // On success, remove the marker from the specified line number in the gutter
                         var cm = editor; // Get the CodeMirror instance
                         cm.setGutterMarker(lineNumber, "tracepoint", null);

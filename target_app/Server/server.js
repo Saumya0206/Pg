@@ -27,6 +27,7 @@ app.set('port', (process.argv[2] || 8000));
 
 var server = app.listen(app.get('port'), function () {
   console.log('listening on port ', app.get('port'));
+  console.log("vtgrf");
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
