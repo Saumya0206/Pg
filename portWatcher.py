@@ -29,6 +29,7 @@ def clean_for_email(email, force=False):
                 print(f"Process with PID {pid} killed")
             except Exception as e:
                 print(f"Failed to kill process with PID {pid}: {e}")
+                print("here")
             database.delete_email(email)
     except:
         pass

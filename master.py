@@ -91,6 +91,7 @@ def get_free_port(email):
     global database
     while True:
         database.increment_last_active_port(start_port, end_port)
+        print(email)
         port = database.get_last_active_port()
         if not database.check_port_in_use(port):
             return port
